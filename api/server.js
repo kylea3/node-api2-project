@@ -6,8 +6,8 @@ const server = express();
 
 server.use(express.json());
 
-const postsRoutes = require('./posts/posts-router');
+const postsRouter = require('./posts/posts-router');
 
 
-server.use('/posts', postsRoutes)
+server.use('/api/posts', postsRouter)
 module.exports = server
